@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPop - Choose Photos</title>
+    <link rel="stylesheet" href="../Css/choose-photos.css">
+</head>
+<body>
+    <div class="container">
+        <img src="..\Assets\Buttons\backButton.png" alt="Back" class="back-btn" onclick="goBack()">
+        <h1 class="title">PixelPop</h1>
+        <p class="subtitle">Choose <span id="photo-count">3/6</span> Photos</p>
+        <div class="photo-grid">
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo1.png" alt="Photo 1"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo2.png" alt="Photo 2"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo3.png" alt="Photo 3"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo4.png" alt="Photo 4"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo5.png" alt="Photo 5"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo6.png" alt="Photo 6"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo7.png" alt="Photo 7"></div>
+            <div class="photo" onclick="selectPhoto(this)"><img src="../Assets/Photos/photo8.png" alt="Photo 8"></div>
+        </div>
+        <button class="confirm-btn" onclick="confirmSelection()">Confirm Selection</button>
+    </div>
+</body>
+</html>
