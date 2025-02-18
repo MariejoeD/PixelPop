@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    background-color: #f8c8dc;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 50px 20px;
+}
+
+.title {
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.template-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.template {
+    background-color: #ffddb3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.template:hover {
+    transform: scale(1.1);
+}
+
+.template img {
+    width: 120px;
+    height: auto;
+}
