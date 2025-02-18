@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # PixelPop
 Strike a Pose in the Digital Realm
 
@@ -61,4 +59,4 @@ Integration with social media for instant sharing.
 
 # License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute PixelPop.
->>>>>>> 857358203f1b259b35930fd96a84df65386b3024
+
