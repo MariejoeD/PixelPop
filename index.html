@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberBooth</title>
+    <title>PixelPop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>PixelPop</h1>
+        <div class="buttons">
+            <button class="btn">Take Photo</button>
+            <div class="dropdown">
+                <button class="btn upload-btn">Upload Photo</button>
+                <div class="dropdown-content">
+                    <p>Drag Photos</p>
+                    <hr>
+                    <p onclick="openFileManager()">Open File Manager</p>
+                </div>
+            </div>
+        </div>
+        <p class="tagline">Strike a Pose in the Digital Realm.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
