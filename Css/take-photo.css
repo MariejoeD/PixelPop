@@ -1,11 +1,12 @@
 /* General Styling */
 body {
-    font-family: Georgia, serif;
+    font-family: "Georgia", serif;
     text-align: center;
-    background-color: #f8c8dc;
+    background-color: #f8c8dc; /* Soft pastel pink */
     color: black;
     margin: 0;
     padding: 0;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in effect */
 }
 
 /* Main Container */
@@ -27,6 +28,12 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Cute hover effect for back button */
+.back-btn-image:hover {
+    transform: scale(1.2) rotate(-10deg);
 }
 
 /* Title */
@@ -34,6 +41,11 @@ body {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #ff4081; /* Cute pink */
+    text-shadow: 
+        3px 3px 8px rgba(255, 102, 178, 0.6), 
+        -3px -3px 8px rgba(255, 204, 255, 0.6); /* Glowing effect */
+    animation: floaty 3s infinite ease-in-out; /* Floating animation */
 }
 
 /* Camera Container */
@@ -45,41 +57,57 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px dashed black;
-    border-radius: 10px;
-    background-color: #fff;
+    border: 2px dashed #ff99cc; /* Cute pastel pink border */
+    border-radius: 15px;
+    background: linear-gradient(145deg, #fff, #ffe6f2);
+    box-shadow: 4px 4px 10px rgba(255, 153, 204, 0.4);
+    animation: popIn 0.8s ease-in-out;
 }
 
+/* Camera Placeholder */
 .camera-placeholder {
     width: 95%;
     height: 80%;
-    background-color: #eaeaea;
-    border-radius: 10px;
+    background-color: #ffe6f2; /* Softer pink background */
+    border-radius: 15px;
     margin-bottom: 20px;
+    border: 2px solid #ff99cc;
 }
 
+/* Ensures the video fills the container nicely */
 .camera-placeholder video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Fill the container while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 /* Snap Button */
 .snap-btn {
-    background-color: #ff5c5c;
+    background: linear-gradient(145deg, #ff5c5c, #ff4040);
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 8px rgba(255, 92, 92, 0.6);
+    transition: all 0.3s ease-in-out;
 }
 
+/* Cute Hover Effect */
 .snap-btn:hover {
-    background-color: #ff3c3c;
+    background: linear-gradient(145deg, #ff3c3c, #ff2020);
+    box-shadow: 5px 5px 12px rgba(255, 51, 51, 0.6);
+    transform: scale(1.1);
 }
 
+/* Cute Click Effect */
+.snap-btn:active {
+    transform: scale(0.95);
+}
+
+/* Timer */
 .timer {
     position: absolute;
     top: 42.5%;
@@ -91,7 +119,9 @@ body {
     border-radius: 5px;
     font-size: 4em;
     display: none; /* Initially hidden */
+    animation: popIn 0.5s ease-in-out;
 }
+
 /* Snow Effect */
 #snowCanvas {
     position: fixed;
@@ -101,4 +131,38 @@ body {
     height: 100vh;
     pointer-events: none; /* Allows clicking elements underneath */
     z-index: -1; /* Moves it behind the content */
+}
+
+/* Keyframe Animations */
+
+/* Soft Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating Animation (for title) */
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Pop-In Animation (for containers) */
+@keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
