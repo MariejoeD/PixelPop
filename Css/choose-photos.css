@@ -81,3 +81,12 @@ body {
 .confirm-btn:hover {
     background-color: #d81b60;
 }
+#snowCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allows clicking elements underneath */
+    z-index: -1; /* Moves it behind the content */
+}

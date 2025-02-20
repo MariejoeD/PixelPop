@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    background-color: #f8c8dc;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Back Button */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-btn img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Centered Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Title */
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+/* Image Preview */
+.image-preview {
+    width: 500px;
+    height: 500px;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Save Button (Fixed at Bottom) */
+.save-btn {
+    background-color: #ff5c5c;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.save-btn:hover {
+    background-color: #ff3c3c;
+}
+
+/* Filter Selection (Full Height on Right) */
+.filter-container {
+    background-color: #ffe6b354;
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    outline: 2px solid aliceblue;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+/* Filter Title */
+.filter-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #360402;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+/* Filter Options */
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+.filter-box {
+    width: 80%;
+    height: 100px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.filter-box:hover {
+    background-color: #bfbfbf;
+}
+
+/* Snow Effect Canvas */
+#snowCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allows interaction with elements below */
+    z-index: 0; /* Keeps it in the background but visible */
+}
