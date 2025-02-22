@@ -45,11 +45,11 @@ function startTimedSnapshots() {
             snapshotIndex++;
             count = interval;
 
-            if (snapshotIndex >= 10) {
+            if (snapshotIndex >= 4) {
                 clearInterval(countdown);
                 timerDisplay.textContent = "Snapshots completed!";
                 setTimeout(() => {
-                    window.location.href = "pick-templates.html"; // Hide timer
+                    window.location.href = "four-templates.html"; 
                 }, 2000);
                 
             }

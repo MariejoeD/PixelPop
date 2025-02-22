@@ -1,0 +1,118 @@
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ffd6eb,#fea0c9);
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    padding: 50px 20px;
+    position: relative;
+}
+
+.back-btn {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+/* Heading */
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 1px;
+    color: #ff66b2; /* Cute pink color */
+    text-shadow: 3px 3px 10px rgba(248, 248, 248, 0.8); /* Soft glowing shadow */
+    background: linear-gradient(90deg, #f5248c, #f721ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.subtitle {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #ff66b2; 
+    text-shadow: 
+        2px 2px 5px rgba(255, 153, 204, 0.6), 
+        -2px -2px 5px rgba(255, 255, 255, 0.6); /* Soft dreamy glow */
+    background: linear-gradient(90deg, #f86bb2, #a505a5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    display: block;
+    letter-spacing: 1px;
+    position: relative;
+    animation: floaty 3s infinite ease-in-out;
+}
+
+/* Floating Animation */
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.template-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.template {
+    background-color: #ffddb3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.template:hover {
+    transform: scale(1.1);
+}
+
+.template img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+}
+/* Snow Effect */
+#snowCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allows clicking elements underneath */
+    z-index: -1; /* Moves it behind the content */
+}
